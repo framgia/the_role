@@ -39,6 +39,7 @@ module TheRole
   end
 end
 
+require_relative "../app/controllers/concerns/the_role/controller.rb"
 require_relative "../config/routes.rb"
 
 if defined?(ActiveRecord::Base)
