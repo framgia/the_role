@@ -1,3 +1,5 @@
+require "#{_root_}/app/controllers/concerns/the_role/controller.rb"
+
 class Admin::RolesController < ApplicationController
   include TheRole::Controller
   layout  TheRole.config.layout.to_s
