@@ -36,6 +36,11 @@ module TheRole
 
     # http://stackoverflow.com/questions/6279325/adding-to-rails-autoload-path-from-gem
     # config.to_prepare do; end
+
+    if Rails::VERSION::MAJOR == 4
+      config.autoload_paths << "#{ config.root }/app/models/concerns/**"
+      config.autoload_paths << "#{ config.root }/app/controllers/concerns/**"
+    end
   end
 end
 
