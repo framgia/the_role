@@ -1,5 +1,5 @@
 module TheRole
-  class AdminRoutes
+  class Routes
     def call mapper, options = {}
       mapper.resources :roles, :except => :show do
         mapper.get 'export', on: :collection
